@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Dawn Erb",
-    "currentPage": "photos.html",
+    "currentPage": "publications.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -47,8 +47,8 @@
       }
     ],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 92,
-    "versionPublish": "4.8.10",
+    "uniqCompNum": 91,
+    "versionPublish": "4.7.6",
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/icon.ico",
@@ -571,7 +571,7 @@
             }
           },
           "_name": "content6",
-          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"95\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"http://dawnerb.net/saltonsea#h1ba43066\"><img src=\"@PROJECT_PATH@/assets/images/dsc-423-436x436.jpg\" alt=\"Salton Sea\" title=\"Salton Sea, California\"></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>See more at my <a href=\"http://dawnerb.net/\">photo website.</a></b><br><br><b>Photo shows:</b><br>Roast Coffee Company, Milwaukee, WI: February - April 2018<br>Roast Coffee Company, Milwaukee, WI: <br>August - October 2016<br>Roast Coffee Company, Milwaukee, WI: November 2011 - January 2012<b><br></b></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"95\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"http://dawnerb.net/saltonsea#h1ba43066\"><img src=\"@PROJECT_PATH@/assets/images/dsc-422-436x436.jpg\" alt=\"Salton Sea\" title=\"Salton Sea, California\"></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>See more at my <a href=\"http://dawnerb.net/\">photo website.</a></b><br><br><b>Photo shows:</b><br>Roast Coffee Company, Milwaukee, WI, February - April 2018<br>Roast Coffee Company, Milwaukee, WI, August - October 2016<br>Roast Coffee Company, Milwaukee, WI, November 2011 - January 2012<b><br></b></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "qTdeD97wYy",
           "_anchor": "content6-1x",
           "_protectedParams": [],
@@ -670,58 +670,6 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/dsc-83.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/dsc-83-800x533.jpg",
-                "alt": "Svalbard",
-                "title": "Svalbard",
-                "customStyle1": "display-7",
-                "caption": "Svalbard",
-                "active": false
-              },
-              {
-                "tags": "Northern Places",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/dsc-816.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/dsc-816-800x533.jpg",
-                "alt": "Svalbard",
-                "title": "Svalbard",
-                "customStyle1": "display-7",
-                "caption": "Svalbard",
-                "active": false
-              },
-              {
-                "tags": "Northern Places",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/dsc-187.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/dsc-187-800x533.jpg",
-                "alt": "Svalbard",
-                "title": "Svalbard",
-                "customStyle1": "display-7",
-                "caption": "Svalbard",
-                "active": false
-              },
-              {
-                "tags": "Northern Places",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/dsc-1049.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/dsc-1049-800x533.jpg",
-                "alt": "Svalbard",
-                "title": "Svalbard",
-                "customStyle1": "display-7",
-                "caption": "Svalbard",
-                "active": true
-              },
-              {
-                "tags": "Northern Places",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "image": "@PROJECT_PATH@/assets/images/dsc-1749-2000x1333.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/dsc-1749-2000x1333-800x533.jpg",
                 "alt": "Faroe Islands",
@@ -735,10 +683,10 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/faroes2017-share2.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/faroes2017-share2-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/dsc-6624-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/dsc-6624-2000x1333-800x533.jpg",
                 "alt": "Faroe Islands",
-                "title": "Faroe Islands",
+                "title": "Kirkjubøur, Faroe Islands",
                 "customStyle1": "display-7",
                 "caption": "Faroe Islands",
                 "active": false
@@ -774,12 +722,64 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/dsc-5402.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/dsc-5402-800x533.jpg",
-                "alt": "Iceland",
-                "title": "Iceland",
+                "image": "@PROJECT_PATH@/assets/images/dsc-7180-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/dsc-7180-2000x1333-800x533.jpg",
+                "alt": "Faroe Islands",
+                "title": "Koltur, Faroe Islands",
                 "customStyle1": "display-7",
-                "caption": "Iceland",
+                "caption": "Faroe Islands",
+                "active": false
+              },
+              {
+                "tags": "Northern Places",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/dsc-7820-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/dsc-7820-2000x1333-800x533.jpg",
+                "alt": "Faroe Islands",
+                "title": "Kunoy, Faroe Islands",
+                "customStyle1": "display-7",
+                "caption": "Faroe Islands",
+                "active": false
+              },
+              {
+                "tags": "Northern Places",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/faroes-insta-1-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/faroes-insta-1-2000x1333-800x533.jpg",
+                "alt": "Faroe Islands",
+                "title": "Mykines, Faroe Islands",
+                "customStyle1": "display-7",
+                "caption": "Faroe Islands",
+                "active": false
+              },
+              {
+                "tags": "Northern Places",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/faroes-insta-2-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/faroes-insta-2-2000x1333-800x533.jpg",
+                "alt": "Faroe Islands",
+                "title": "Mykines, Faroe Islands",
+                "customStyle1": "display-7",
+                "caption": "Faroe Islands",
+                "active": false
+              },
+              {
+                "tags": "Northern Places",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/faroes-insta-8-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/faroes-insta-8-2000x1333-800x533.jpg",
+                "alt": "Faroe Islands",
+                "title": "Bøur, Faroe Islands",
+                "customStyle1": "display-7",
+                "caption": "Faroe Islands",
                 "active": false
               },
               {
@@ -793,32 +793,6 @@
                 "title": "Kolgrafafjörður, Iceland",
                 "customStyle1": "display-7",
                 "caption": "Iceland",
-                "active": false
-              },
-              {
-                "tags": "California",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/dsc-3503-2000x1333.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/dsc-3503-2000x1333-800x533.jpg",
-                "alt": "Norway",
-                "title": "Keiservarden, Bodø, Norway",
-                "customStyle1": "display-7",
-                "caption": "Norway",
-                "active": false
-              },
-              {
-                "tags": "Wisconsin",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/dsc-3691.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/dsc-3691-800x533.jpg",
-                "alt": "Sweden",
-                "title": "Abisko National Park, Sweden",
-                "customStyle1": "display-7",
-                "caption": "Sweden",
                 "active": false
               },
               {
@@ -861,12 +835,38 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/dsc-3503-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/dsc-3503-2000x1333-800x533.jpg",
+                "alt": "Norway",
+                "title": "Keiservarden, Bodø, Norway",
+                "customStyle1": "display-7",
+                "caption": "Norway",
+                "active": false
+              },
+              {
+                "tags": "California",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "image": "@PROJECT_PATH@/assets/images/dsc-638-1024x680.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/dsc-638-1024x680-800x531.jpg",
                 "alt": "California",
                 "title": "Bombay Beach, Salton Sea, California",
                 "customStyle1": "display-7",
                 "caption": "California",
+                "active": false
+              },
+              {
+                "tags": "Wisconsin",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/dsc-3951-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/dsc-3951-2000x1333-800x533.jpg",
+                "alt": "Milwaukee",
+                "title": "Lake Michigan, Milwaukee, Wisconsin",
+                "customStyle1": "display-7",
+                "caption": "Milwaukee",
                 "active": false
               },
               {
@@ -893,7 +893,7 @@
                 "title": "Salvation Mountain, Niland, California",
                 "customStyle1": "display-7",
                 "caption": "California",
-                "active": false
+                "active": true
               },
               {
                 "tags": "California, B/W",
@@ -2313,7 +2313,7 @@
             }
           },
           "_name": "header9",
-          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/backgrounds.003-1024x768.png\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-md-8\">\n            <h1 class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <br>Dawn Erb</h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\"><span style=\"font-style: normal;\">Associate Professor,</span> <a href=\"http://uwm.edu/physics/\">Department of Physics</a><br><a href=\"https://uwm.edu/\">University of Wisconsin-Milwaukee</a><br></h3>\n            <p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><p>• Physics 817, Cosmology. Spring 2018. Cosmology for physics graduate students.<br>• Astronomy 103, Survey of Astronomy. Spring 2018. Astronomy for non-science majors. Stars and star formation, the solar system and extra-solar planets, galaxies and cosmology.<br>• Astronomy 103, Survey of Astronomy. Fall 2017.&nbsp;<br>• Astronomy 103, Survey of Astronomy. Spring 2017.&nbsp;<br>• Astronomy 401/Physics 903, Galaxies and Cosmology. Spring 2017. Galaxies and cosmology for upper-level undergraduate physics majors and graduate students.<br>• Astronomy 103, Survey of Astronomy. Fall 2015.<br>• Astronomy 103, Survey of Astronomy. Spring 2015.&nbsp;<br>• Astronomy 401/Physics 903, Galaxies and Cosmology. Spring 2015.&nbsp;<br>• Astronomy 103, Survey of Astronomy. Spring 2014.&nbsp;<br>• Physics 817, Cosmology. Spring 2014.&nbsp;<br>• Astronomy 103, Survey of Astronomy. Spring 2013.&nbsp;<br>• Astronomy 401, Galaxies and Cosmology. Spring 2013. Galaxies and cosmology for upper-level undergraduate physics majors.<br>• Physics 817, Cosmology. Fall 2011.&nbsp;<br>• Astronomy 320, Galaxies and Cosmology. Spring 2011. Galaxies and cosmology for upper-level undergraduate physics majors.<br></p></p>\n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/backgrounds.003-1024x768.png\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-md-8\">\n            <h1 class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <br>Dawn Erb</h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\"><span style=\"font-style: normal;\">Associate Professor,</span> <a href=\"http://uwm.edu/physics/\">Department of Physics</a><br><a href=\"https://uwm.edu/\">University of Wisconsin-Milwaukee</a><br></h3>\n            <p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Physics 817, Cosmology. Spring 2018. Cosmology for physics graduate students.<br>Astronomy 103, Survey of Astronomy. Spring 2018. Astronomy for non-science majors. Stars and star formation, the solar system and extra-solar planets, galaxies and cosmology.<br>Astronomy 103, Survey of Astronomy. Fall 2017.&nbsp;<br>Astronomy 103, Survey of Astronomy. Spring 2017.&nbsp;<br>Astronomy 401/Physics 903, Galaxies and Cosmology. Spring 2017. Galaxies and cosmology for upper-level undergraduate physics majors and graduate students.<br>Astronomy 103, Survey of Astronomy. Fall 2015.<br>Astronomy 103, Survey of Astronomy. Spring 2015.&nbsp;<br>Astronomy 401/Physics 903, Galaxies and Cosmology. Spring 2015.&nbsp;<br>Astronomy 103, Survey of Astronomy. Spring 2014.&nbsp;<br>Physics 817, Cosmology. Spring 2014.&nbsp;<br>Astronomy 103, Survey of Astronomy. Spring 2013.&nbsp;<br>Astronomy 401, Galaxies and Cosmology. Spring 2013. Galaxies and cosmology for upper-level undergraduate physics majors.<br>Physics 817, Cosmology. Fall 2011.&nbsp;<br>Astronomy 320, Galaxies and Cosmology. Spring 2011. Galaxies and cosmology for upper-level undergraduate physics majors.<br></p>\n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
           "_cid": "qTbHKnMcWA",
@@ -3252,13 +3252,13 @@
             }
           },
           "_name": "header9",
-          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-md-8\">\n            <h1 class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                Dawn Erb</h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\"><span style=\"font-style: normal;\">Associate Professor,</span> <a href=\"http://uwm.edu/physics/\">Department of Physics</a><div><a href=\"https://uwm.edu/\">University of Wisconsin-Milwaukee</a></div><div><br></div><div><a href=\"https://ui.adsabs.harvard.edu/#search/q=*%3A*&sort=date%20desc%2C%20bibcode%20desc&p_=0&__qid=e1b8a475b998b0ba41daeeabf88a481a\">ADS Search</a></div><div><br></div><div><span style=\"font-style: normal;\"><b>Refereed Publications</b></span></div></h3>\n            <p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><ol><li>pubs go here</li></ol></p>\n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-md-8\">\n            <h1 class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                Dawn Erb</h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\"><span style=\"font-style: normal;\">Associate Professor,</span> <a href=\"http://uwm.edu/physics/\">Department of Physics</a><div><a href=\"https://uwm.edu/\">University of Wisconsin-Milwaukee</a></div><div><br></div><div><a href=\"https://ui.adsabs.harvard.edu/#search/q=*%3A*&sort=date%20desc%2C%20bibcode%20desc&p_=0&__qid=e1b8a475b998b0ba41daeeabf88a481a\">ADS Search</a></div><div><br></div><div><span style=\"font-style: normal;\"><b>Refereed Publications</b></span></div></h3>\n            <p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><ol><li>pubs go here</li><li>g</li></ol><br><ol><li>g</li></ol><br><ol><li>g</li></ol><br><ol><li>g</li></ol><br><br><ol><li>g</li></ol></p>\n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
           "_cid": "qTQU6KZIpa",
-          "_anchor": "header9-2i",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "header9-2i"
         }
       ]
     },
