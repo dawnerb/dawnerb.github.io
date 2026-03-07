@@ -231,6 +231,24 @@ const GRADE_SCALE = [
   /* Result card */
   #result { display: none; text-align: center; }
 
+  .grade-pair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .grade-col {
+    flex: 1;
+  }
+
+  .grade-divider {
+    width: 1px;
+    height: 5rem;
+    background: var(--border);
+    flex-shrink: 0;
+  }
+
   .grade-display {
     font-size: 4.5rem;
     font-weight: 800;
@@ -307,13 +325,13 @@ const GRADE_SCALE = [
       <div class="field-row">
         <div class="field">
           <label for="a_completed">Completed</label>
-          <input type="number" id="a_completed" min="0" placeholder="e.g. 7"
+          <input type="number" id="a_completed" min="0" placeholder="e.g. 12"
                  aria-label="Activities completed" oninput="updateBar('a')">
           <div class="progress-wrap"><div class="progress-bar" id="bar_a"></div></div>
         </div>
         <div class="field">
           <label for="a_possible">Possible so far</label>
-          <input type="number" id="a_possible" min="1" placeholder="e.g. 8"
+          <input type="number" id="a_possible" min="1" placeholder="e.g. 14"
                  aria-label="Activities possible so far" oninput="updateBar('a')">
           <div style="height:4px;margin-top:0.4rem"></div>
         </div>
@@ -326,13 +344,13 @@ const GRADE_SCALE = [
       <div class="field-row">
         <div class="field">
           <label for="r_completed">Completed</label>
-          <input type="number" id="r_completed" min="0" placeholder="e.g. 4"
+          <input type="number" id="r_completed" min="0" placeholder="e.g. 10"
                  aria-label="Reflections completed" oninput="updateBar('r')">
           <div class="progress-wrap"><div class="progress-bar" id="bar_r"></div></div>
         </div>
         <div class="field">
           <label for="r_possible">Possible so far</label>
-          <input type="number" id="r_possible" min="1" placeholder="e.g. 4"
+          <input type="number" id="r_possible" min="1" placeholder="e.g. 12"
                  aria-label="Reflections possible so far" oninput="updateBar('r')">
           <div style="height:4px;margin-top:0.4rem"></div>
         </div>
@@ -364,13 +382,13 @@ const GRADE_SCALE = [
       <div class="field-row">
         <div class="field">
           <label for="t_completed">Completed</label>
-          <input type="number" id="t_completed" min="0" placeholder="e.g. 12"
+          <input type="number" id="t_completed" min="0" placeholder="e.g. 10"
                  aria-label="Learning targets completed" oninput="updateBar('t')">
           <div class="progress-wrap"><div class="progress-bar" id="bar_t"></div></div>
         </div>
         <div class="field">
           <label for="t_possible">Possible so far</label>
-          <input type="number" id="t_possible" min="1" placeholder="e.g. 25"
+          <input type="number" id="t_possible" min="1" placeholder="e.g. 12"
                  aria-label="Learning targets possible so far" oninput="updateBar('t')">
           <div style="height:4px;margin-top:0.4rem"></div>
         </div>
@@ -385,9 +403,18 @@ const GRADE_SCALE = [
   </button>
 
   <div class="card" id="result" aria-live="polite" aria-label="Grade result">
-    <p class="card-heading">Estimated current grade</p>
-    <div class="grade-display" id="grade-out" aria-label="Grade"></div>
-    <p class="grade-label">Current Standing</p>
+    <p class="card-heading">Estimated grades</p>
+    <div class="grade-pair">
+      <div class="grade-col">
+        <div class="grade-display" id="grade-out" aria-label="Current grade"></div>
+        <p class="grade-label">Current Grade</p>
+      </div>
+      <div class="grade-divider"></div>
+      <div class="grade-col">
+        <div class="grade-display" id="grade-max" aria-label="Maximum possible grade"></div>
+        <p class="grade-label">Max Possible</p>
+      </div>
+    </div>
     <div class="breakdown" id="breakdown"></div>
   </div>
 
@@ -415,6 +442,22 @@ const GRADE_SCALE = [
 
   function getVal(id) { return parseFloat(document.getElementById(id).value); }
 
+  function gradeFromAbsolute(ac, rc, pc, tc) {
+    // Use absolute counts against the raw grade scale (not normalized)
+    const rows = GRADE_SCALE.slice(1); // skip row 0 (max possible)
+    const lastRow = rows[rows.length - 1]; // D- boundary
+
+    if (ac < lastRow.a || rc < lastRow.r || pc < lastRow.p || tc < lastRow.t) {
+      return 'F';
+    }
+    const aIdx = rows.findIndex(r => ac >= r.a);
+    const rIdx = rows.findIndex(r => rc >= r.r);
+    const pIdx = rows.findIndex(r => pc >= r.p);
+    const tIdx = rows.findIndex(r => tc >= r.t);
+    const worstIdx = Math.max(aIdx, rIdx, pIdx, tIdx);
+    return rows[worstIdx].grade;
+  }
+
   function calculate() {
     const err = document.getElementById('error');
     err.style.display = 'none';
@@ -435,12 +478,12 @@ const GRADE_SCALE = [
       return;
     }
 
+    // Current grade: based on fraction completed so far
     const aFrac = ac / ap, rFrac = rc / rp,
           pFrac = pc / pp, tFrac = tc / tp;
 
-    const lastRow = normalized[normalized.length - 1]; // D- boundary
+    const lastRow = normalized[normalized.length - 1];
     let grade;
-
     if (aFrac < lastRow.a || rFrac < lastRow.r || pFrac < lastRow.p || tFrac < lastRow.t) {
       grade = 'F';
     } else {
@@ -449,20 +492,22 @@ const GRADE_SCALE = [
       const rIdx = rows.findIndex(r => rFrac >= r.r);
       const pIdx = rows.findIndex(r => pFrac >= r.p);
       const tIdx = rows.findIndex(r => tFrac >= r.t);
-      const worstIdx = Math.max(aIdx, rIdx, pIdx, tIdx);
-      grade = rows[worstIdx].grade;
+      grade = rows[Math.max(aIdx, rIdx, pIdx, tIdx)].grade;
     }
+
+    // Max possible grade: assume student completes all remaining assignments
+    const maxA = GRADE_SCALE[0].a, maxR = GRADE_SCALE[0].r,
+          maxP = GRADE_SCALE[0].p, maxT = GRADE_SCALE[0].t;
+    const aMax = ac + (maxA - ap);
+    const rMax = rc + (maxR - rp);
+    const pMax = pc + (maxP - pp);
+    const tMax = maxT; // learning targets: always assume all can still be completed
+    const maxGrade = gradeFromAbsolute(aMax, rMax, pMax, tMax);
 
     // Show result
     const resultEl = document.getElementById('result');
     resultEl.style.display = 'block';
     resultEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-    const gradeOut = document.getElementById('grade-out');
-    gradeOut.textContent = grade;
-    gradeOut.style.animation = 'none';
-    void gradeOut.offsetHeight;
-    gradeOut.style.animation = '';
 
     // High-contrast grade colors (WCAG AA on dark bg)
     const gradeColors = {
@@ -472,30 +517,45 @@ const GRADE_SCALE = [
       'D+': '#fb923c', 'D': '#fb923c', 'D-': '#fb923c',
       'F':  '#f87171'
     };
-    gradeOut.style.background = 'none';
-    gradeOut.style.webkitTextFillColor = gradeColors[grade] || '#f0f4ff';
-    gradeOut.style.color = gradeColors[grade] || '#f0f4ff';
+
+    function setGrade(elId, g) {
+      const el = document.getElementById(elId);
+      el.textContent = g;
+      el.style.animation = 'none';
+      void el.offsetHeight;
+      el.style.animation = '';
+      el.style.background = 'none';
+      const color = gradeColors[g] || '#f0f4ff';
+      el.style.webkitTextFillColor = color;
+      el.style.color = color;
+    }
+
+    setGrade('grade-out', grade);
+    setGrade('grade-max', maxGrade);
+
+    const aFracMax = aMax / maxA, rFracMax = rMax / maxR,
+          pFracMax = pMax / maxP, tFracMax = tMax / maxT;
 
     document.getElementById('breakdown').innerHTML = `
       <div class="breakdown-item">
         <div class="breakdown-name">Activities</div>
         <div class="breakdown-value">${ac} / ${ap}</div>
-        <div class="breakdown-pct">${(aFrac * 100).toFixed(1)}%</div>
+        <div class="breakdown-pct">${(aFrac * 100).toFixed(1)}% now · ${aMax} / ${maxA} possible</div>
       </div>
       <div class="breakdown-item">
         <div class="breakdown-name">Reflections</div>
         <div class="breakdown-value">${rc} / ${rp}</div>
-        <div class="breakdown-pct">${(rFrac * 100).toFixed(1)}%</div>
+        <div class="breakdown-pct">${(rFrac * 100).toFixed(1)}% now · ${rMax} / ${maxR} possible</div>
       </div>
       <div class="breakdown-item">
         <div class="breakdown-name">Project</div>
         <div class="breakdown-value">${pc} / ${pp}</div>
-        <div class="breakdown-pct">${(pFrac * 100).toFixed(1)}%</div>
+        <div class="breakdown-pct">${(pFrac * 100).toFixed(1)}% now · ${pMax} / ${maxP} possible</div>
       </div>
       <div class="breakdown-item">
         <div class="breakdown-name">Learning Targets</div>
         <div class="breakdown-value">${tc} / ${tp}</div>
-        <div class="breakdown-pct">${(tFrac * 100).toFixed(1)}%</div>
+        <div class="breakdown-pct">${(tFrac * 100).toFixed(1)}% now · ${tc} / ${maxT} so far</div>
       </div>
     `;
   }
